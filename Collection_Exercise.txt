@@ -1,0 +1,64 @@
+Create a Abstract Class Product with the following structure:
+
+public abstract class Product implements Comparable<Product> {
+
+	private int itemCode;
+	private String itemName;
+	private double quantity;
+	private double unitPrice;
+}
+
+Create a Class Apparel Which extends Product with the following structure
+public class Apparel extends Product {
+
+	private int size;
+
+	private String material;
+
+}
+Create another class Electronics which extends Product and the following structure
+public class Electronics extends Product {
+
+	private int warrantyMonths;
+
+}
+Cretate a class FoodItem which extends Proudct and the following structure
+
+public class FoodItem extends Product  {
+
+	private LocalDate mfgDate;
+	private LocalDate expirtyDate;
+	private boolean isVegetarian;
+
+}
+
+Store the Elements of the Product in a List based collections
+
+Create a Java application to Print the Top Three Items sold in each category By Quanity.
+
+FoodItem 
+
+=========================================================
+Item Number ItemName Quanity
+=======================================================
+1        milk           5
+2        sugar          4
+3        rice           3
+=======================================
+
+
+Electronics
+
+=========================================================
+Item Number ItemName Quanity
+=======================================================
+1        mobile           25
+2        laptop           14
+3        printer          03
+=======================================
+
+Use Appropriate Service Layer and exception Handling
+
+
+
+
