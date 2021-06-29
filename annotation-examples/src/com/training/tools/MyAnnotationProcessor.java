@@ -12,9 +12,13 @@ public class MyAnnotationProcessor {
 		Employee  suresh = new Employee();
 		
 		
+		
 		Class<?> classRef = suresh.getClass();
 		
 		try {
+			
+			Example clsLevel = classRef.getAnnotation(Example.class);
+			
 			Method  methodRef = classRef.getMethod("showDetails");
 			
 			                   
@@ -26,6 +30,9 @@ public class MyAnnotationProcessor {
 			 buffer.append(anno.version());
 			 
 			System.out.println("Annotation Processing Result"+ buffer.toString());
+			
+			System.out.println("Class Level Annotation");
+			System.out.println(clsLevel.title() + clsLevel.version());
 			
 			
 		} catch (NoSuchMethodException e) {

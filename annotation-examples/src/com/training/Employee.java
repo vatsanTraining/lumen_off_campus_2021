@@ -6,6 +6,7 @@ import com.training.stereotypes.Example;
 public class Employee {
 
 	
+	
 	   @Example(title = "trial on Method")
 		public String showDetails() {
 		
